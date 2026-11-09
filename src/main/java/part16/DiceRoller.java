@@ -22,6 +22,6 @@ public class DiceRoller {
         // Attempts to use the global 'random' instance variable to generate a random number, but it is null (causing a crash) and assigns it to the global 'number' variable
 
         System.out.println(number);
-        // Prints the rolled number to the console
+        // Prints the rolled number to the consolee
     }
 }

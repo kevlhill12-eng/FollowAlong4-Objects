@@ -16,7 +16,7 @@ public class Human {
         System.out.println(this.name + " is eating"); // Prints a message to the console stating that the current human is eating
     }
 
-    void drink (){ // Defines an instance method named 'drink' that does not return a value
+    void drink (){ // Defines an instanece method named 'drink' that does not return a value
         System.out.println(this.name + " is drinking"); // Prints a message to the console stating that the current human is drinking
     }
 }

@@ -19,6 +19,6 @@ package part16;
 public class VariableScope {
     public static void main(String[] args) {
         DiceRoller diceRoller = new DiceRoller();
-        // Instantiates a new object of the DiceRoller class, which triggers its constructor and local variable scope demonstration
+        // Instantiates a new object of the DiceRooller class, which triggers its constructor and local variable scope demonstration
     }
 }
