@@ -17,15 +17,30 @@ package part17;
 public class ToStringMethod {
     public static void main(String[] args) {
         Car car = new Car();
+        // Instantiates a new Car object using the default constructor
 
         System.out.println(car.make);
+        // Prints the 'make' instance variable of the car object ("Ford") to the console
+
         System.out.println(car.model);
+        // Prints the 'model' instance variable of the car object ("Mustang") to the console
+
         System.out.println(car.color);
+        // Prints the 'color' instance variable of the car object ("red") to the console
+
         System.out.println(car.year);
+        // Prints the 'year' instance variable of the car object (2021) to the console
 
         System.out.println(car);
+        // Implicitly calls car.toString() and prints the returned multi-line string representation of the object
+
         System.out.println(car.toString());
+        // Explicitly calls the toString() method on the car object and prints the returned multi-line string
+
         System.out.println(car.toString());
+        // Explicitly calls the toString() method again and prints the returned multi-line string
+
         System.out.println(car);
+        // Implicitly calls car.toString() again and prints the returned multi-line string representation of the object
     }
 }

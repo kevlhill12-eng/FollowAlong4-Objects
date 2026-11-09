@@ -17,11 +17,21 @@ package part17;
 public class OverloadedConstructors {
     public static void main(String[] args) {
         Pizza pizza = new Pizza("thick crust", "tomato", "mozzarella");
+        // Instantiates a new Pizza object using an overloaded constructor that accepts three arguments: bread, sauce, and cheese
 
         System.out.println("Here are the ingredients of your pizza: ");
+        // Prints a header message to the console introducing the pizza ingredients
+
         System.out.println(pizza.bread);
+        // Prints the 'bread' instance variable of the pizza object ("thick crust") to the console
+
         System.out.println(pizza.sauce);
+        // Prints the 'sauce' instance variable of the pizza object ("tomato") to the console
+
         System.out.println(pizza.cheese);
+        // Prints the 'cheese' instance variable of the pizza object ("mozzarella") to the console
+
         System.out.println(pizza.topping);
+        // Prints the 'topping' instance variable of the pizza object (which will be null or uninitialized since it wasn't passed to this constructor) to the console
     }
 }
