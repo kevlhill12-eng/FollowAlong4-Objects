@@ -17,22 +17,33 @@ package part15;
 //    in THIS file AND in Car.java, saying in YOUR OWN WORDS what that line does.
 
 public class ObjectOriented {
+    // Declares the main method, which is the starting point of the Java application execution
     public static void main(String[] args) {
-    Car myCar = new Car ();
-    Car myCar2  = new Car ();
+        // Creates a new instance (object) of the Car class and assigns it to the variable myCar
+        Car myCar = new Car ();
 
+        // Creates a second, independent instance (object) of the Car class and assigns it to myCar2
+        Car myCar2  = new Car ();
+
+        // Prints the 'make' field value of the first Car object (myCar) to the console
         System.out.println(myCar.make);
+
+        // Prints the 'model' field value of the first Car object (myCar) to the console
         System.out.println(myCar.model);
+
+        // Prints a blank line to the console for spacing
         System.out.println();
 
-
+        // Prints the 'make' field value of the second Car object (myCar2) to the console
         System.out.println(myCar2.make);
+
+        // Prints the 'model' field value of the second Car object (myCar2) to the console
         System.out.println(myCar2.model);
 
-
-
-
+        // // Calls the 'drive' method on the myCar object (currently commented out)
         // myCar.drive ();
+
+        // // Calls the 'brake' method on the myCar object (currently commented out)
         // myCar.brake ();
 
     }

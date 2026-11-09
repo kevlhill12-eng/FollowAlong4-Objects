@@ -16,13 +16,14 @@ package part15;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class FinalKeyword {
+    // Declares a public class named FinalKeyword
     public static void main(String[] args) {
-    final double PI = 3.14159;
+        // Declares the main method, which serves as the entry point of the Java application
+        final double PI = 3.14159;
+        // Declares a constant double variable named 'PI' using the final keyword, initializing it to 3.14159 (making its value immutable)
 
 
+        // Prints the value of the constant 'PI' to the console
         System.out.println(PI);
-
-
-
     }
 }
