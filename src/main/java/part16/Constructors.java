@@ -17,5 +17,15 @@ package part16;
 //    in THIS file AND in Human.java, saying in YOUR OWN WORDS what that line does.
 
 public class Constructors {
+    public static void main(String[] args) {
+    Human human = new Human("Kevin", 19, 160.5);
+    Human human2 = new Human("Morty", 17, 140.6);
 
+        System.out.println(human.name);
+        System.out.println(human2.name);
+
+        human2.eat();
+        human.drink();
+
+    }
 }
