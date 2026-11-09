@@ -9,7 +9,44 @@ package part15;
 // There is no main method here yet. Typing it is part of the stretch.
 // Stretch A uses YOUR Car class from the follow-along, so do Section A first.
 // Stretch B: your Phone class goes in THIS file, BELOW the last } of class Stretch.
-
+/*
+blue
+red
+red
+3000.0
+ */
 public class Stretch {
+    public static void main(String[] args) {
+        Car a = new Car();
+        Car b = new Car();
+        b.color = "red";
+        System.out.println(a.color);
+        System.out.println(b.color);
+        a = b;
+        System.out.println(a.color);
+        final double TAX_RATE = 0.06;
+        System.out.println(a.price * TAX_RATE);
 
+        Phone phone = new Phone();
+        phone.charge();
+        phone.charge();
+        System.out.println(phone.brand + " battery: " + phone.battery);
+
+    }
+
+}
+
+class Phone {
+    String brand = "Apple";
+    int battery = 80;
+    final int MAX_BATTERY =100;
+
+
+    void charge() {
+        battery = battery + 10;
+        if (battery > MAX_BATTERY){
+            battery = MAX_BATTERY;
+        }
+        System.out.println("Charging... " + battery + "%");
+    }
 }
