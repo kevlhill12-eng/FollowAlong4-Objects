@@ -9,7 +9,40 @@ package part17;
 // Stretch B2 and B3 also change your Pizza and Car classes.
 //
 // There is no main method here yet. Typing it is part of the stretch.
+/*
+null
+olives
+null
+Ford
+Mustang
+red
+2021
+ */
 
 public class Stretch {
+    public static void main(String[] args) {
+        Pizza a = new Pizza("flatbread", "pesto");
+        Pizza b = new Pizza("thin crust", "tomato", "cheddar", "olives");
+        Pizza c = new Pizza();
+        System.out.println(a.cheese);
+        System.out.println(b.topping);
+        System.out.println(c.bread);
+        String make = "Honda";
+        String model = "Civic";
+        int year = 2019;
+        String description = year + " " + make + " " + model;
+        System.out.println(description);
+
+        Pizza mine = new Pizza("thin crust", "tomato", "cheddar", "olives");
+        System.out.println(mine);
+
+
+        Car other = new Car("Toyota", "Corolla", "blue", 2018);
+        System.out.println(other);
+
+
+
+    }
 
 }
+

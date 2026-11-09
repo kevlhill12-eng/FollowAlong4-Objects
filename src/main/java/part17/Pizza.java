@@ -6,7 +6,7 @@ public class Pizza {
     String cheese; // Declares a String instance variable to store the pizza's cheese type
     String topping; // Declares a String instance variable to store the pizza's topping
 
-    Pizza (String bread, String sauce, String cheese, String topping) {
+    Pizza(String bread, String sauce, String cheese, String topping) {
         // Overloaded constructor that takes four arguments to initialize bread, sauce, cheese, and topping
         this.bread = bread;
         this.sauce = sauce;
@@ -34,5 +34,13 @@ public class Pizza {
 
     Pizza() {
         // No-argument (default) constructor that creates a Pizza object without initializing any fields
+    }
+
+    public String toString() {
+
+
+        String myString = bread + " pizza with " + sauce + ", " + cheese + " and " + topping;
+
+        return myString;
     }
 }
