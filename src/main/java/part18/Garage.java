@@ -7,4 +7,7 @@ public class Garage {
         System.out.println("The " + car.name + " is parked in the garage");
         // Prints a message to the console concatenating the 'name' property of the passed Car object into the text string
     }
+    void leave (Car car){
+        System.out.println("The " + car.name + " left the garage");
+    }
 }
