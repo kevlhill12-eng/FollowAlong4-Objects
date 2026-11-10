@@ -17,11 +17,19 @@ package part18;
 public class ObjectPassing {
     public static void main(String[] args) {
         Garage garage = new Garage();
+        // Instantiates a new Garage object to serve as a parking container
+
         Car car1 = new Car("BMW");
+        // Instantiates a new Car object named "car1" passing the string "BMW" to its constructor
+
         Car car2 = new Car("Tesla");
+        // Instantiates a new Car object named "car2" passing the string "Tesla" to its constructor
 
         garage.park(car1);
+        // Invokes the 'park' method on the garage instance, passing the 'car1' object as an argument
+
         garage.park(car2);
+        // Invokes the 'park' method on the garage instance, passing the 'car2' object as an argument
 
     }
 }

@@ -17,23 +17,43 @@ package part18;
 public class ArrayOfObjects {
     public static void main(String[] args) {
         int [] numbers = new int [3];
+        // Declares and instantiates an integer array with a fixed size of 3 (default values are 0)
+
         char [] letters = new char [3];
+        // Declares and instantiates a character array with a fixed size of 3 (default values are empty chars)
+
         String[] words = new String [3];
+        // Declares and instantiates a String array with a fixed size of 3 (default values are null)
 
         Food[] refrigerator = new Food[3];
+        // Declares and instantiates an array capable of holding 3 Food objects (initially all slots are null)
 
         Food food1 = new Food("pizza");
-        Food food2 = new Food("hamburger");
-        Food food3 = new Food("hot dog");
+        // Instantiates a new Food object named 'food1' with the name property set to "pizza"
 
+        Food food2 = new Food("hamburger");
+        // Instantiates a new Food object named 'food2' with the name property set to "hamburger"
+
+        Food food3 = new Food("hot dog");
+        // Instantiates a new Food object named 'food3' with the name property set to "hot dog"
 
         refrigerator[0] = food1;
+        // Assigns the 'food1' object reference to the first slot (index 0) of the refrigerator array
+
         refrigerator[1] = food2;
+        // Assigns the 'food2' object reference to the second slot (index 1) of the refrigerator array
+
         refrigerator[2] = food3;
+        // Assigns the 'food3' object reference to the third slot (index 2) of the refrigerator array
 
         System.out.println(refrigerator[0].name);
+        // Accesses the Food object at index 0 of the array and prints its 'name' instance variable ("pizza")
+
         System.out.println(refrigerator[1].name);
+        // Accesses the Food object at index 1 of the array and prints its 'name' instance variable ("hamburger")
+
         System.out.println(refrigerator[2].name);
+        // Accesses the Food object at index 2 of the array and prints its 'name' instance variable ("hot dog")
 
     }
 }
