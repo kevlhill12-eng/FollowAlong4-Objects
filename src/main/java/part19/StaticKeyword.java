@@ -17,12 +17,18 @@ package part19;
 public class StaticKeyword {
     public static void main(String[] args) {
         Friend friend1 = new Friend("Spongebob");
+        //setting friend 1 name
         Friend friend2 = new Friend("Patrick");
+        //setting friend 2 name
         Friend friend3 = new Friend("Squidward");
+        //setting friend 3 name
         Friend friend4 = new Friend("Sandy");
+        // setting friend 4's name
 
         Friend.displayFriends();
+        //calling out te display method
         System.out.println(Math.round(3.14));
+        //printing out rounded math
 
     }
 }
