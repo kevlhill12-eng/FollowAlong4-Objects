@@ -22,4 +22,7 @@ public class Friend {
         System.out.println("You have " + numberOfFriends + " friends");
         // printing out method
     }
+    static String newestFriend;
+
+
 }
