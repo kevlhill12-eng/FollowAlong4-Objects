@@ -4,6 +4,7 @@ public class Friend {
 
 
     static int numberOfFriends;
+    static String newestFriend;
     //saying this value exist any time in the program
 
         String name;
@@ -14,6 +15,7 @@ public class Friend {
             // saying to use this value name
             numberOfFriends++;
             // adding one friend per successful loop
+            newestFriend = name;
 
         }
 
@@ -22,7 +24,9 @@ public class Friend {
         System.out.println("You have " + numberOfFriends + " friends");
         // printing out method
     }
-    static String newestFriend;
+
+
+
 
 
 }
