@@ -13,42 +13,73 @@ package part20;
 // Under these comments, type the class: public class Receiver { ... }
 //
 // When it works, put a // comment ABOVE every line of code, in YOUR OWN WORDS (Section B).
-public class Receiver{
+public class Receiver {
+// Declares the public class named Receiver to model a football wide receiver.
+
     String name;
+    // Declares an instance variable to store the receiver's name.
     int n;
+    // Declares an instance variable to store the receiver's jersey number.
     int catches;
+    // Declares an instance variable to track the total number of catches made.
     int yards;
+    // Declares an instance variable to track the total receiving yards accumulated.
 
-    Receiver(String name, int n){
+    Receiver(String name, int n) {
+        // Defines the constructor for the Receiver class, accepting a name and jersey number.
         this.name = name;
+        // Assigns the passed name parameter to the instance variable.
         this.n = n;
-
+        // Assigns the passed jersey number parameter to the instance variable.
     }
-     public String getName(){
+    // Closes the constructor block.
 
+    public String getName() {
+        // Defines a getter method to retrieve the receiver's name.
         return name;
-
+        // Returns the stored name value.
     }
-    public int getNumber(){
+    // Closes the getName method block.
 
+    public int getNumber() {
+        // Defines a getter method to retrieve the receiver's jersey number.
         return n;
+        // Returns the stored jersey number value.
     }
-    public int getCatches(){
+    // Closes the getNumber method block.
 
+    public int getCatches() {
+        // Defines a getter method to retrieve the total number of catches.
         return catches;
+        // Returns the stored catches count.
     }
-    public int getYards(){
+    // Closes the getCatches method block.
 
+    public int getYards() {
+        // Defines a getter method to retrieve the total receiving yards.
         return yards;
+        // Returns the accumulated yardage.
     }
-    public void catchBall(int gain){
+    // Closes the getYards method block.
+
+    public void catchBall(int gain) {
+        // Defines a method to update statistics when a ball is caught with a given yardage gain.
         catches++;
+        // Increments the catch counter by 1.
         yards += gain;
+        // Adds the yardage gain amount to the total receiving yards.
     }
-    public String toString(){
-        String myString = "#" + n + " " + name + ": " +  catches + " catches, " + yards + " yards";
+    // Closes the catchBall method block.
+
+    public String toString() {
+        // Defines the toString method to return a formatted string representation of the receiver.
+        String myString = "#" + n + " " + name + ": " + catches + " catches, " + yards + " yards";
+        // Builds the formatted string containing the number, name, catches, and yards.
         return myString;
+        // Returns the constructed summary string.
     }
+    // Closes the toString method block.
 }
+// Closes the Receiver class block.
 
 
