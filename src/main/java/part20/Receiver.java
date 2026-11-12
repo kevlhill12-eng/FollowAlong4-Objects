@@ -72,14 +72,28 @@ public class Receiver {
     // Closes the catchBall method block.
 
     public String toString() {
-        // Defines the toString method to return a formatted string representation of the receiver.
-        String myString = "#" + n + " " + name + ": " + catches + " catches, " + yards + " yards";
+
+        if(catches == 1){
+            // Defines the toString method to return a formatted string representation of the receiver.
+            String myString = "#" + n + " " + name + ": " + catches + " catch, " + yards + " yards";
+            return myString;
+        } else{
+
+            return "#" + n + " " + name + ": " + catches + " catches, " + yards + " yards";
+        }
+
         // Builds the formatted string containing the number, name, catches, and yards.
-        return myString;
         // Returns the constructed summary string.
     }
-    // Closes the toString method block.
+    // Closes the toString method block
+   public double yardsPerCatch(){
+        if (catches == 0){
+            return 0.0;
+        }
+        return ((double)yards / catches);
+   }
 }
 // Closes the Receiver class block.
+
 
 
