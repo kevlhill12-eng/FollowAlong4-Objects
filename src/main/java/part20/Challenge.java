@@ -38,13 +38,13 @@ public class Challenge {
     }
 
     public int count(String s, String word) {
-        int count = 0;
+        int counts = 0;
         int index = s.indexOf(word, 0);
         while (index != -1) {
-            count++;
+            counts++;
             index = s.indexOf(word, index + word.length());
         }
-        return count;
+        return counts;
 
     }
 }
