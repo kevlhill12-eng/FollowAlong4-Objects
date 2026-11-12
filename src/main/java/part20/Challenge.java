@@ -16,7 +16,14 @@ public class Challenge {
     //   anything else                               → 0
     //   ticketResult(2, 2, 2) → 10     ticketResult(1, 2, 3) → 5     ticketResult(2, 2, 1) → 0
     public static int ticketResult(int a, int b, int c) {
-        return 0;   // YOUR CODE
+        if (a == b && b == c) {
+            return 10;
+        } else if (b != a && c != a) {
+            return 5;
+        } else {
+            return 0;
+        }
+        // YOUR CODE
     }
 
     // true if x and y show up the same number of times inside s.
@@ -24,6 +31,20 @@ public class Challenge {
     //   sameCount("catcat", "cat", "dog")   → false   (twice and zero times)
     //   sameCount("", "cat", "dog")         → true    (zero each)
     public static boolean sameCount(String s, String x, String y) {
-        return false;   // YOUR CODE
+        return new Challenge().count(s, x) == new Challenge().count(s, y);
+
+
+
+    }
+
+    public int count(String s, String word) {
+        int count = 0;
+        int index = s.indexOf(word, 0);
+        while (index != -1) {
+            count++;
+            index = s.indexOf(word, index + word.length());
+        }
+        return count;
+
     }
 }
